@@ -1,10 +1,10 @@
-# ATGP-Net:Adaptive Texture-Guided Precision Segmentation Network for Breast Cancer Ultrasound Image
+# Multi-Angle Fusion Deep Subspace Clustering via Channel Selection
 ## Abstract
-Breast cancer remains a leading cause of female mortality worldwide, with early detection through ultrasound imaging playing a crucial role. However, segmenting breast cancer tumors accurately is challenging due to their blurred boundaries and irregular shapes. To address this, we introduce the Adaptive Texture-Guided Precision Segmentation Network (ATGP-Net), a novel approach for breast cancer ultrasound image segmentation. ATGP-Net incorporates three key modules: Dual-Axis Self-Calibrating Attention (DASCA) for enhanced spatial feature reconstruction, Adaptive Information Fusion Module (AIFM) for improved channel information modeling, and Multiscale Edge-Enhanced Gradient Alignment Module (MEEGA) for precise edge detection. Experiments on three publicly available datasets demonstrate that ATGP-Net outperforms cur-rent advanced methods, achieving significant improvements in loU (as high as 63.56%) and Dice coefficient (as high as 76.68%). Our approach presents a robust solution for accurate breast cancer segmentation, contributing to earlier detection and improved patient outcomes. Our code is available at https://github.com/jiazhuangdiandian/ATGP-Net.git.
+Subspace clustering networks based on convolutional autoencoders have achieved remarkable success in clustering tasks. However, not all channels in the convolutional layers contribute positively; some may learn noisy or irrelevant features, which degrade the quality of the self-representation coefficient matrix and consequently affect the clustering performance. To address this issue, this paper proposes a multi-angle fusion deep subspace clustering method via channel selection (MFDSC). The work effectively removes noisy channel features through a channel selection mechanism, thereby improving clustering performance. Additionally, we design a multi-angle fusion attention module that weights the self-representation coefficient matrix from three different perspectives, further enhancing its quality. Experimental results on five publicly available datasets fully demonstrate the effectiveness and superiority of MFDSC in clustering performance. Experimental results show that our approach presents significant performance advantages over current advanced baseline methods. Our code is available at https://github.com/jiazhuangdiandian/MFDSC.git.
 ## framework diagram
-![](https://github.com/jiazhuangdiandian/ATGP-Net/blob/master/img/1.jpg "framework diagram")
-## Segmentation results
-![](https://github.com/jiazhuangdiandian/ATGP-Net/blob/master/img/2.jpg "Segmentation results")
+![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/network.jpg) "framework diagram")
+
+![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/MA.jpg)
 ## Environment
 1.Clonee thin repo:https://github.com/jiazhuangdiandian/ATGP-Net.git
 
