@@ -321,7 +321,6 @@ if __name__ == "__main__":
 
                 dscnet = DSCNet(num_sample=num_sample, channels=channels, kernels=kernels, T=T)
                 dscnet.to(device)
-                # ae_state_dict = torch.load('D:/5\DSC\pretrained_weights_original/%s(0.5)-1995.pkl' % db)
                 ae_state_dict = torch.load('H:/5/results/yaleb/1/yaleb.pkl')
                 dscnet.load_state_dict(ae_state_dict)
                 print("Pretrained ae weights are loaded successfully.")
