@@ -2,11 +2,11 @@
 ## Abstract
 Subspace clustering networks based on convolutional autoencoders have achieved remarkable success in clustering tasks. However, not all channels in the convolutional layers contribute positively; some may learn noisy or irrelevant features, which degrade the quality of the self-representation coefficient matrix and consequently affect the clustering performance. To address this issue, this paper proposes a multi-angle fusion deep subspace clustering method via channel selection (MFDSC). The work effectively removes noisy channel features through a channel selection mechanism, thereby improving clustering performance. Additionally, we design a multi-angle fusion attention module that weights the self-representation coefficient matrix from three different perspectives, further enhancing its quality. Experimental results on five publicly available datasets fully demonstrate the effectiveness and superiority of MFDSC in clustering performance. Experimental results show that our approach presents significant performance advantages over current advanced baseline methods. Our code is available at https://github.com/jiazhuangdiandian/MFDSC.git.
 ## framework diagram
-![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/network.jpg) "framework diagram")
-
-![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/MA.jpg)
+![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/network.jpg "framework diagram")
+## framework diagram
+![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/MA.jpg "framework diagram")
 ## Environment
-1.Clonee thin repo:https://github.com/jiazhuangdiandian/ATGP-Net.git
+1.Clonee thin repo:https://github.com/jiazhuangdiandian/MFDSC.git
 
 2.Create a new conda environment and install dependencies:
 
@@ -28,13 +28,6 @@ pip:
 -typing-extensions==4.0.0
 -yapf==0.31.0
 ```
-## Training & Test
-Python train.py
+## Training
+Python main-[data].py
 
-Python val.py
-## Dataset
-Breast Ultrasound Dataset B: https://helward.mmu.ac.uk/STAFF/M.Yap/dataset.php
-
-Breast Ultrasound Images (BUSI)：https://github.com/hugofigueiras/Breast-Cancer-Imaging-Datasets
-
-BLUI:https://qamebi.com/breast-ultrasound-images-database/
