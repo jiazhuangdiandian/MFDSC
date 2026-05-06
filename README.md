@@ -2,9 +2,9 @@
 ## Abstract
 Subspace clustering networks based on convolutional autoencoders have achieved remarkable success in clustering tasks. However, not all channels in the convolutional layers contribute positively; some may learn noisy or irrelevant features, which degrade the quality of the self-representation coefficient matrix and consequently affect the clustering performance. To address this issue, this paper proposes a multi-angle fusion deep subspace clustering method via channel selection (MFDSC). The work effectively removes noisy channel features through a channel selection mechanism, thereby improving clustering performance. Additionally, we design a multi-angle fusion attention module that weights the self-representation coefficient matrix from three different perspectives, further enhancing its quality. Experimental results on five publicly available datasets fully demonstrate the effectiveness and superiority of MFDSC in clustering performance. Experimental results show that our approach presents significant performance advantages over current advanced baseline methods. Our code is available at https://github.com/jiazhuangdiandian/MFDSC.git.
 ## framework diagram
-![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/network.jpg "framework diagram")
-## framework diagram
-![]([https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/MA.jpg "framework diagram")
+![](https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/network.jpg "framework diagram")
+## Multi-angle fusion attention mechanism module
+![](https://github.com/jiazhuangdiandian/MFDSC/blob/main/img/MA.jpg "Multi-angle fusion attention mechanism module")
 ## Environment
 1.Clonee thin repo:https://github.com/jiazhuangdiandian/MFDSC.git
 
