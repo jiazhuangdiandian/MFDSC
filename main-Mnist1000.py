@@ -299,8 +299,7 @@ if __name__ == "__main__":
         dscnet = DSCNet(num_sample=num_sample, channels=channels, kernels=kernels, T=T)
         dscnet.to(device)
 
-        # ae_state_dict = torch.load('D:/5\DSC\pretrained_weights_original/%s-12.pkl' % db)
-        ae_state_dict = torch.load('H:/5/results/mnist/mnist(0).pkl')
+        ae_state_dict = torch.load('H:/5/results/mnist/mnist.pkl')
         dscnet.load_state_dict(ae_state_dict)
         print("Pretrained ae weights are loaded successfully.")
         train(dscnet, x, y, epochs, weight_coef=weight_coef, weight_selfExp=weight_selfExp, alpha=alpha, dim_subspace=dim_subspace, ro=ro, show=args.show_freq, device=device)
